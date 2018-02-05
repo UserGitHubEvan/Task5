@@ -1,0 +1,1000 @@
+/* line 5, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'robotoblack';
+  src: url("/fonts/roboto-black-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'playfair_displayblack';
+  src: url("/fonts/playfairdisplay-black-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'hammersmith_one';
+  src: url("/fonts/hammersmith-one-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 1, ../sass/misc/adjustments.scss */
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* line 7, ../sass/misc/adjustments.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 11, ../sass/misc/adjustments.scss */
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/sections/welcome.scss */
+.welcome-section {
+  height: 100vh;
+  background: url("../img/welcome.jpg") 0 0 no-repeat;
+  background-size: cover;
+  position: relative;
+}
+/* line 7, ../sass/sections/welcome.scss */
+.welcome-section .bg {
+  height: inherit;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+}
+/* line 13, ../sass/sections/welcome.scss */
+.welcome-section .welcome-slogan {
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+/* line 22, ../sass/sections/welcome.scss */
+.welcome-section .welcome-slogan h1 {
+  color: #fff;
+  font-family: 'playfair_displayblack';
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  position: relative;
+}
+/* line 31, ../sass/sections/welcome.scss */
+.welcome-section .welcome-slogan h1:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #00e0d0;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 44, ../sass/sections/welcome.scss */
+.welcome-section .welcome-slogan p {
+  color: #fff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 50px;
+  width: 75%;
+  text-align: center;
+}
+
+/* line 57, ../sass/sections/welcome.scss */
+.btn {
+  color: #00e0d0;
+  font-family: 'hammersmith_one', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid #00e0d0;
+}
+
+/* line 67, ../sass/sections/welcome.scss */
+.btn:hover {
+  background: #00e0d0;
+  color: #fff;
+}
+
+/* line 1, ../sass/sections/header.scss */
+.header-wrap {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 8, ../sass/sections/header.scss */
+.logo {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+/* line 12, ../sass/sections/header.scss */
+.logo h1 {
+  margin-left: 10px;
+  color: #00e0d0;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+/* line 21, ../sass/sections/header.scss */
+.main-list {
+  display: flex;
+}
+
+/* line 25, ../sass/sections/header.scss */
+.main-list li {
+  margin-left: 20px;
+}
+
+/* line 29, ../sass/sections/header.scss */
+.main-list li a {
+  color: #ffffff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 37, ../sass/sections/header.scss */
+.main-list li a:hover {
+  color: #00e0d0;
+}
+
+/* line 1, ../sass/sections/our-story.scss */
+.our-story-section {
+  padding: 60px 0;
+}
+/* line 4, ../sass/sections/our-story.scss */
+.our-story-section .our-story {
+  display: flex;
+}
+/* line 8, ../sass/sections/our-story.scss */
+.our-story-section .our-story-left {
+  margin-right: 100px;
+  width: 27%;
+}
+/* line 13, ../sass/sections/our-story.scss */
+.our-story-section .our-story-pic {
+  align-items: flex-end;
+  width: 235px;
+  height: 229px;
+}
+/* line 19, ../sass/sections/our-story.scss */
+.our-story-section .our-story-left img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 25, ../sass/sections/our-story.scss */
+.our-story-section .our-story-right {
+  width: 70%;
+  text-align: left;
+}
+/* line 29, ../sass/sections/our-story.scss */
+.our-story-section .our-story-right h3 {
+  color: #413d4b;
+  font-family: 'playfair_displayblack', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+}
+/* line 38, ../sass/sections/our-story.scss */
+.our-story-section .our-story-right p {
+  opacity: 0.75;
+  color: #413d4b;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
+
+/* line 1, ../sass/sections/watch-our.scss */
+.watch-our-section {
+  height: 100vh;
+  background: url("../img/watch-our.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+/* line 6, ../sass/sections/watch-our.scss */
+.watch-our-section .bg {
+  height: inherit;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+}
+
+/* line 13, ../sass/sections/watch-our.scss */
+.block-watch-our {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 20, ../sass/sections/watch-our.scss */
+.block-watch-our figure {
+  width: 156px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* line 27, ../sass/sections/watch-our.scss */
+.block-watch-our figure img {
+  margin-bottom: 30px;
+}
+/* line 31, ../sass/sections/watch-our.scss */
+.block-watch-our figure h3 {
+  color: #fff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 1, ../sass/sections/expertise.scss */
+.expertise-section {
+  padding: 70px 0 60px;
+}
+/* line 4, ../sass/sections/expertise.scss */
+.expertise-section header {
+  color: #413d4b;
+  font-family: "playfair_displayblack";
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+/* line 15, ../sass/sections/expertise.scss */
+.expertise-section p {
+  opacity: 0.75;
+  color: #2f2d35;
+  font-family: "playfair_displayblack";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 65px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/* line 27, ../sass/sections/expertise.scss */
+.expertise-section p:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #413d4b;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 41, ../sass/sections/expertise.scss */
+.expertise-list {
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 940px;
+}
+/* line 47, ../sass/sections/expertise.scss */
+.expertise-list .exp-icon-1 {
+  background: url("../img/exp-icon-1.png") 50% 15% no-repeat;
+}
+/* line 51, ../sass/sections/expertise.scss */
+.expertise-list .exp-icon-2 {
+  background: url("../img/exp-icon-2.png") 50% 15% no-repeat;
+}
+/* line 55, ../sass/sections/expertise.scss */
+.expertise-list .exp-icon-3 {
+  background: url("../img/exp-icon-3.png") 50% 15% no-repeat;
+}
+/* line 59, ../sass/sections/expertise.scss */
+.expertise-list .exp-icon-4 {
+  background: url("../img/exp-icon-4.png") 50% 15% no-repeat;
+}
+/* line 63, ../sass/sections/expertise.scss */
+.expertise-list .exp-icon-5 {
+  background: url("../img/exp-icon-5.png") 50% 15% no-repeat;
+}
+/* line 67, ../sass/sections/expertise.scss */
+.expertise-list .exp-icon-6 {
+  background: url("../img/exp-icon-6.png") 50% 15% no-repeat;
+}
+
+/* line 72, ../sass/sections/expertise.scss */
+.expertise-list li {
+  max-width: 310px;
+  border: 1px solid #000;
+}
+
+/* line 77, ../sass/sections/expertise.scss */
+.expertise-list li:nth-child(n) {
+  border-top: 0;
+  border-left: 0;
+}
+
+/* line 82, ../sass/sections/expertise.scss */
+.expertise-list li:nth-child(3n) {
+  border-right: 0;
+}
+
+/* line 86, ../sass/sections/expertise.scss */
+.expertise-list li:nth-child(4n) {
+  border-bottom: 0;
+}
+
+/* line 90, ../sass/sections/expertise.scss */
+.expertise-list li:nth-child(5n) {
+  border-bottom: 0;
+}
+
+/* line 94, ../sass/sections/expertise.scss */
+.expertise-list li:nth-child(6n) {
+  border-bottom: 0;
+}
+
+/* line 98, ../sass/sections/expertise.scss */
+.pad-exp {
+  padding: 115px 32px 40px;
+}
+/* line 101, ../sass/sections/expertise.scss */
+.pad-exp h5 {
+  color: #413d4b;
+  font-family: "robotoblack";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+/* line 110, ../sass/sections/expertise.scss */
+.pad-exp p {
+  opacity: 0.75;
+  color: #333333;
+  font-family: "robotoblack";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+/* line 120, ../sass/sections/expertise.scss */
+.pad-exp p:after {
+  content: '';
+  display: none;
+}
+
+/* line 1, ../sass/sections/meet-our.scss */
+.meet-our-section {
+  background: url("../img/meet-our.jpg") 0 0 no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+/* line 7, ../sass/sections/meet-our.scss */
+.meet-our-section .container {
+  padding: 67px 0;
+  text-align: center;
+}
+/* line 17, ../sass/sections/meet-our.scss */
+.meet-our-section .bg {
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+}
+/* line 22, ../sass/sections/meet-our.scss */
+.meet-our-section header {
+  color: #fff;
+  font-family: "playfair_displayblack";
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+}
+/* line 33, ../sass/sections/meet-our.scss */
+.meet-our-section p {
+  opacity: 0.75;
+  color: #f9f9f9;
+  font-family: "playfair_displayblack";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 65px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/* line 45, ../sass/sections/meet-our.scss */
+.meet-our-section p:after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  opacity: 0.2;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 60, ../sass/sections/meet-our.scss */
+.meet-our-list {
+  font-size: 0;
+  max-width: 940px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 65px;
+}
+/* line 68, ../sass/sections/meet-our.scss */
+.meet-our-list li {
+  width: 220px;
+  margin-bottom: 20px;
+}
+/* line 72, ../sass/sections/meet-our.scss */
+.meet-our-list li img {
+  max-width: 220px;
+}
+/* line 77, ../sass/sections/meet-our.scss */
+.meet-our-list .meet-our-pad {
+  padding: 25px 50px;
+  border: 1px solid #e1e1e1;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 85, ../sass/sections/meet-our.scss */
+.meet-our-list .meet-our-pad h3 {
+  color: #fff;
+  font-family: "robotoblack", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* line 94, ../sass/sections/meet-our.scss */
+.meet-our-list .meet-our-pad p {
+  opacity: 0.7;
+  color: #fafafa;
+  font-family: "robotoblack", sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  width: inherit;
+}
+/* line 105, ../sass/sections/meet-our.scss */
+.meet-our-list .meet-our-pad p:after {
+  content: "";
+  display: none;
+}
+
+/* line 112, ../sass/sections/meet-our.scss */
+h6 {
+  color: #f3f3f3;
+  font-family: "robotoblack", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 1, ../sass/sections/our-works.scss */
+.our-works-section {
+  padding: 70px 0;
+}
+
+/* line 5, ../sass/sections/our-works.scss */
+.header-wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+/* line 11, ../sass/sections/our-works.scss */
+.header-wrapper h3 {
+  color: #413d4b;
+  font-family: 'playfair_displayblack';
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/* line 19, ../sass/sections/our-works.scss */
+.header-wrapper a {
+  position: relative;
+  padding-right: 20px;
+}
+/* line 23, ../sass/sections/our-works.scss */
+.header-wrapper a span {
+  color: #413d4b;
+  font-family: "robotoblack", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+/* line 30, ../sass/sections/our-works.scss */
+.header-wrapper a .more {
+  width: 8px;
+  height: 13px;
+  background: url("../img/more.png") 0 0 no-repeat;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+
+/* line 41, ../sass/sections/our-works.scss */
+.items {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 85px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 47, ../sass/sections/our-works.scss */
+.items img {
+  max-width: 100%;
+  width: 1506px;
+}
+
+/* line 1, ../sass/sections/team.scss */
+.team-section {
+  height: 100vh;
+  background: url("../img/team.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+/* line 6, ../sass/sections/team.scss */
+.team-section .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+}
+/* line 18, ../sass/sections/team.scss */
+.team-section .bg {
+  height: inherit;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+}
+/* line 24, ../sass/sections/team.scss */
+.team-section .text {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  width: 770px;
+}
+/* line 30, ../sass/sections/team.scss */
+.team-section .text p {
+  color: #fff;
+  font: 18px/26px 'playfair_displayblack';
+  opacity: 0.85;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+/* line 38, ../sass/sections/team.scss */
+.team-section .text p:before {
+  content: '';
+  display: block;
+  height: 26px;
+  width: 32px;
+  margin: 0 auto 40px;
+  background: url("../img/quotes.png") 50% 15% no-repeat;
+}
+
+/* line 1, ../sass/sections/contact.scss */
+.contact-section {
+  padding: 70px 0;
+}
+
+/* line 5, ../sass/sections/contact.scss */
+.block-center {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* line 10, ../sass/sections/contact.scss */
+.good-news h3, .happy-clients h3 {
+  color: #413d4b;
+  font-family: 'playfair_displayblack';
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+/* line 20, ../sass/sections/contact.scss */
+.happy-clients h3 {
+  margin-bottom: 40px;
+}
+
+/* line 24, ../sass/sections/contact.scss */
+.good-news {
+  max-width: 460px;
+  margin-right: 100px;
+}
+/* line 28, ../sass/sections/contact.scss */
+.good-news form {
+  font-size: 0;
+}
+/* line 31, ../sass/sections/contact.scss */
+.good-news form input, .good-news form textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  margin: 0 0 25px;
+  width: 460px;
+  opacity: .5;
+  color: #413d4b;
+  border: 1px solid #000;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  background: #fff;
+}
+/* line 45, ../sass/sections/contact.scss */
+.good-news form textarea {
+  margin-bottom: 40px;
+}
+/* line 49, ../sass/sections/contact.scss */
+.good-news form .btn-good-news {
+  padding: 13px 30px;
+}
+
+/* line 55, ../sass/sections/contact.scss */
+.happy-clients {
+  max-width: 380px;
+}
+/* line 58, ../sass/sections/contact.scss */
+.happy-clients .happy-clients-list {
+  font-size: 0;
+  max-width: 380px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* line 66, ../sass/sections/contact.scss */
+.happy-clients .happy-clients-list li {
+  margin: 0 0 50px 80px;
+}
+/* line 69, ../sass/sections/contact.scss */
+.happy-clients .happy-clients-list li:nth-child(2n+1) {
+  margin-left: 0;
+}
+
+/* line 1, ../sass/sections/footer.scss */
+.footer-site {
+  background: url("../img/footer.jpg") 0 0 no-repeat;
+  background-size: cover;
+}
+/* line 5, ../sass/sections/footer.scss */
+.footer-site .bg {
+  height: inherit;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+}
+/* line 11, ../sass/sections/footer.scss */
+.footer-site .container {
+  padding: 70px 0;
+}
+
+/* line 16, ../sass/sections/footer.scss */
+.top-footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+/* line 22, ../sass/sections/footer.scss */
+.tajam {
+  max-width: 283px;
+}
+/* line 25, ../sass/sections/footer.scss */
+.tajam .logo-footer {
+  margin-bottom: 20px;
+}
+/* line 29, ../sass/sections/footer.scss */
+.tajam p {
+  color: #ffffff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+/* line 38, ../sass/sections/footer.scss */
+.our-studio {
+  max-width: 267px;
+}
+/* line 41, ../sass/sections/footer.scss */
+.our-studio h3 {
+  color: #fff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+/* line 52, ../sass/sections/footer.scss */
+.our-studio .our-studio-list .our-studio-map {
+  background: url("../img/map.png") 0 5px no-repeat;
+}
+/* line 56, ../sass/sections/footer.scss */
+.our-studio .our-studio-list .our-studio-phone {
+  background: url("../img/phone.png") 0 5px no-repeat;
+}
+/* line 60, ../sass/sections/footer.scss */
+.our-studio .our-studio-list li {
+  padding-left: 30px;
+}
+/* line 63, ../sass/sections/footer.scss */
+.our-studio .our-studio-list li p {
+  color: #ffffff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+/* line 74, ../sass/sections/footer.scss */
+.stay-in-touch {
+  max-width: 291px;
+}
+/* line 77, ../sass/sections/footer.scss */
+.stay-in-touch h3 {
+  color: #fff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+/* line 87, ../sass/sections/footer.scss */
+.stay-in-touch form {
+  margin-bottom: 25px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+}
+/* line 92, ../sass/sections/footer.scss */
+.stay-in-touch form input {
+  opacity: 0.75;
+  color: #fff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+  padding: 8px 15px;
+  background: transparent;
+}
+/* line 103, ../sass/sections/footer.scss */
+.stay-in-touch form .button-footer {
+  margin-left: 10px;
+  display: block;
+  width: 70px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.5) url("../img/paper.png") 50% 50% no-repeat;
+  border: 1px solid #fff;
+}
+
+/* line 114, ../sass/sections/footer.scss */
+.socials-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 117, ../sass/sections/footer.scss */
+.socials-list li {
+  margin-right: 10px;
+}
+/* line 120, ../sass/sections/footer.scss */
+.socials-list li .socials-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+/* line 128, ../sass/sections/footer.scss */
+.socials-list li .socials-link-fb {
+  background: url("../img/socials/facebook.png") 14px 10px no-repeat;
+}
+/* line 132, ../sass/sections/footer.scss */
+.socials-list li .socials-link-tw {
+  background: url("../img/socials/twitter.png") 11px 12px no-repeat;
+}
+/* line 136, ../sass/sections/footer.scss */
+.socials-list li .socials-link-db {
+  background: url("../img/socials/dribbble.png") 10px 9px no-repeat;
+}
+/* line 140, ../sass/sections/footer.scss */
+.socials-list li .socials-link-ia {
+  background: url("../img/socials/instagram.png") 10px 10px no-repeat;
+}
+/* line 144, ../sass/sections/footer.scss */
+.socials-list li .socials-link-gl {
+  background: url("../img/socials/google.png") 11px 11px no-repeat;
+}
+/* line 148, ../sass/sections/footer.scss */
+.socials-list li .socials-link-yt {
+  background: url("../img/socials/youtube.png") 9px 12px no-repeat;
+}
+
+/* line 154, ../sass/sections/footer.scss */
+.bottom-footer-wrap {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* line 160, ../sass/sections/footer.scss */
+.footer-list {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+/* line 163, ../sass/sections/footer.scss */
+.footer-list li {
+  margin-right: 30px;
+}
+/* line 166, ../sass/sections/footer.scss */
+.footer-list li a {
+  color: #fff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+/* line 177, ../sass/sections/footer.scss */
+.copyrights {
+  color: #fff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}

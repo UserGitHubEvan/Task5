@@ -1,0 +1,24 @@
+// Vars
+$body-font: 'playfair_displayblack';
+$robot-font: 'robotoblack';
+
+// Colors
+
+
+// Layout
+@import "compass/reset";
+@import "misc/fonts";
+@import "misc/mixins";
+@import "misc/adjustments";
+
+// Styles
+@import "sections/welcome";
+@import "sections/header";
+@import "sections/our-story";
+@import "sections/watch-our";
+@import "sections/expertise";
+@import "sections/meet-our";
+@import "sections/our-works";
+@import "sections/team";
+@import "sections/contact";
+@import "sections/footer";

@@ -1,0 +1,51 @@
+.our-works-section {
+  padding: 70px 0;
+}
+
+.header-wrapper {
+  @include mixflexbox();
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+
+  h3 {
+    color: #413d4b;
+    font-family: 'playfair_displayblack';
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  a {
+    position: relative;
+    padding-right: 20px;
+
+    span {
+      color: #413d4b;
+      font-family: $robot-font, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    .more {
+      width: 8px;
+      height: 13px;
+      background: url("../img/more.png") 0 0 no-repeat;
+      position: absolute;
+      top: 1px;
+      right: 0;
+    }
+  }
+}
+
+.items {
+  @include mixflexbox();
+  margin-bottom: 85px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  img {
+    max-width: 100%;
+    width: 1506px;
+  }
+}

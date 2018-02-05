@@ -1,0 +1,124 @@
+.expertise-section {
+  padding: 70px 0 60px;
+
+  header {
+    color: #413d4b;
+    font-family: $body-font;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    opacity: 0.75;
+    color: #2f2d35;
+    font-family: $body-font;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 65px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  p:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #413d4b;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.expertise-list {
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 940px;
+
+  .exp-icon-1 {
+    background: url("../img/exp-icon-1.png") 50% 15% no-repeat;
+  }
+
+  .exp-icon-2 {
+    background: url("../img/exp-icon-2.png") 50% 15% no-repeat;
+  }
+
+  .exp-icon-3 {
+    background: url("../img/exp-icon-3.png") 50% 15% no-repeat;
+  }
+
+  .exp-icon-4 {
+    background: url("../img/exp-icon-4.png") 50% 15% no-repeat;
+  }
+
+  .exp-icon-5 {
+    background: url("../img/exp-icon-5.png") 50% 15% no-repeat;
+  }
+
+  .exp-icon-6 {
+    background: url("../img/exp-icon-6.png") 50% 15% no-repeat;
+  }
+}
+
+.expertise-list li {
+  max-width: 310px;
+  border: 1px solid #000;
+}
+
+.expertise-list li:nth-child(n) {
+  border-top: 0;
+  border-left: 0;
+}
+
+.expertise-list li:nth-child(3n) {
+  border-right: 0;
+}
+
+.expertise-list li:nth-child(4n) {
+   border-bottom: 0;
+}
+
+.expertise-list li:nth-child(5n) {
+  border-bottom: 0;
+}
+
+.expertise-list li:nth-child(6n) {
+  border-bottom: 0;
+}
+
+.pad-exp {
+  padding: 115px 32px 40px;
+
+  h5 {
+    color: #413d4b;
+    font-family: $robot-font;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  p {
+    opacity: 0.75;
+    color: #333333;
+    font-family: $robot-font;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-bottom: 0;
+  }
+
+  p:after {
+    content: '';
+    display: none;
+  }
+}

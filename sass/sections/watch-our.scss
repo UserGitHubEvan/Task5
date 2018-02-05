@@ -1,0 +1,39 @@
+.watch-our-section {
+  height: 100vh;
+  background: url("../img/watch-our.jpg") 0 0 no-repeat;
+  background-size: cover;
+
+  .bg {
+    height: inherit;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    opacity: 0.85;
+  }
+}
+
+.block-watch-our {
+  width: 100%;
+  height: 100%;
+  @include mixflexbox();
+  justify-content: center;
+  align-items: center;
+
+  figure {
+    width: 156px;
+    @include mixflexbox();
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      color: #fff;
+      font-family: 'robotoblack', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+}

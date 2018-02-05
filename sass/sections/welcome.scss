@@ -1,0 +1,70 @@
+.welcome-section {
+  height: 100vh;
+  background: url("../img/welcome.jpg") 0 0 no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .bg {
+    height: inherit;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    opacity: 0.85;
+  }
+
+  .welcome-slogan {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+
+    @include mixflexbox();
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    h1 {
+      color: #fff;
+      font-family: 'playfair_displayblack';
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    h1:after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 1px;
+      background-color: #00e0d0;
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    p {
+      color: #fff;
+      font-family: 'robotoblack', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 50px;
+      width: 75%;
+      text-align: center;
+    }
+  }
+}
+
+.btn {
+  color: #00e0d0;
+  font-family: 'hammersmith_one', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px;
+  border: 1px solid #00e0d0;
+}
+
+.btn:hover {
+  background: #00e0d0;
+  color: #fff;
+}

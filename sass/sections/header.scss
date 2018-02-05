@@ -1,0 +1,39 @@
+.header-wrap {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  @include mixflexbox();
+  align-items: center;
+
+  h1 {
+    margin-left: 10px;
+    color: #00e0d0;
+    font-family: 'robotoblack', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+  }
+}
+
+.main-list {
+  display: flex;
+}
+
+.main-list li {
+  margin-left: 20px;
+}
+
+.main-list li a {
+  color: #ffffff;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-list li a:hover {
+  color: #00e0d0;
+}

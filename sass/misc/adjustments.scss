@@ -1,0 +1,14 @@
+body {
+  @include mixboxsiz();
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}

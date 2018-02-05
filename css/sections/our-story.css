@@ -1,0 +1,49 @@
+/* line 1, ../../sass/sections/our-story.scss */
+.our-story-section {
+  padding: 60px 0;
+}
+/* line 4, ../../sass/sections/our-story.scss */
+.our-story-section .our-story {
+  display: flex;
+}
+/* line 8, ../../sass/sections/our-story.scss */
+.our-story-section .our-story-left {
+  margin-right: 100px;
+  width: 27%;
+}
+/* line 13, ../../sass/sections/our-story.scss */
+.our-story-section .our-story-pic {
+  align-items: flex-end;
+  width: 235px;
+  height: 229px;
+}
+/* line 19, ../../sass/sections/our-story.scss */
+.our-story-section .our-story-left img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 25, ../../sass/sections/our-story.scss */
+.our-story-section .our-story-right {
+  width: 70%;
+  text-align: left;
+}
+/* line 29, ../../sass/sections/our-story.scss */
+.our-story-section .our-story-right h3 {
+  color: #413d4b;
+  font-family: 'playfair_displayblack', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+}
+/* line 38, ../../sass/sections/our-story.scss */
+.our-story-section .our-story-right p {
+  opacity: 0.75;
+  color: #413d4b;
+  font-family: 'robotoblack', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-bottom: 30px;
+}
